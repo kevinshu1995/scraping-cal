@@ -23,10 +23,11 @@ app.get("/", (req, res) => {
     res.status(200).send({ ok: true, message: "Server is fine. 👍" });
 });
 
-app.use("/scrape", RouterScrape);
+app.use("/api/v1/scrape", RouterScrape);
 
 app.listen(PORT, e => {
     console.log(`Server Started at ${PORT}`);
 });
 
 export default app;
+
