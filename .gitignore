@@ -26,3 +26,4 @@ dist-ssr
 .env
 backend/assets/pdf/*.pdf
 backend/assets/screenshots/*.jpg
+.vercel
