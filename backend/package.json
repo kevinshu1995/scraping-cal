@@ -1,0 +1,29 @@
+{
+    "name": "scraping-notification-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "_moduleAliases": {
+        "~root": "."
+    },
+    "scripts": {
+        "start": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "link-module-alias"
+    },
+    "author": "kevinHWS",
+    "license": "ISC",
+    "dependencies": {
+        "@formkit/tempo": "^0.1.2",
+        "axios": "^1.7.2",
+        "dotenv": "^16.4.5",
+        "esm": "^3.2.25",
+        "express": "^4.19.2",
+        "link-module-alias": "^1.2.0",
+        "linkedom": "^0.18.4"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.4"
+    }
+}
