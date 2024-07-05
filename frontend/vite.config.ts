@@ -10,5 +10,14 @@ export default defineConfig({
             "@": path.resolve(__dirname, "./src"),
         },
     },
+    server: {
+        proxy: {
+            "/scrape_api": {
+                target: "https://scraping-cal-backend-lab.vercel.app",
+                changeOrigin: true,
+                rewrite: path => path.replace(/^\/scrape_api/, ""),
+            },
+        },
+    },
 });
 
