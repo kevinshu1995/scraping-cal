@@ -12,5 +12,7 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
-    ]
+    ],
+    "ignoreCommand": "git diff HEAD^ HEAD --quiet -- ./backend"
 }
+
