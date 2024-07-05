@@ -13,6 +13,6 @@
             "dest": "index.js"
         }
     ],
-    "ignoreCommand": "git diff HEAD^ HEAD --quiet -- ./backend"
+    "ignoreCommand": "git diff HEAD^ HEAD --quiet -- ./"
 }
 
