@@ -2,12 +2,18 @@ import express from "express";
 import dotenv from "dotenv";
 import { RouterScrape } from "./router/index.js";
 import { format } from "@formkit/tempo";
+import cors from "cors";
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT;
 
+app.use(
+    cors({
+        origin: ["https://scraping-cal-lab.vercel.app", "https://scraping-cal.vercel.app"],
+    })
+);
 app.use(express.json());
 
 // print logs
